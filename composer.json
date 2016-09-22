@@ -1,0 +1,22 @@
+{
+    "name": "algenza/cosine-similiarity",
+    "description": "Cosine similiarity",
+    "type": "package",
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Billy Renyut",
+            "email": "milhanol068@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Algenza\\Cosinesimiliarity\\": "src/"
+        }
+    },
+    "require": {}
+
+}
