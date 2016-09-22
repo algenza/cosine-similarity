@@ -35,6 +35,7 @@ class Cosine
 		$magnitudeVec2 = sqrt($magnitudeVec2);
 
 		$similiarity = $dotProduct / ($magnitudeVec1 * $magnitudeVec2);
+		
 		return $similiarity;
 	}
 }
