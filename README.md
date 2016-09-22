@@ -1,5 +1,5 @@
 # Cosine-Similarity
-[![Build Status](https://travis-ci.org/algenza/cosine-similiarity.svg?branch=master)](https://travis-ci.org/algenza/cosine-similiarity)
+[![Build Status](https://travis-ci.org/algenza/cosine-similarity.svg?branch=master)](https://travis-ci.org/algenza/cosine-similarity)
 
 ## Installation
 ```sh
@@ -22,7 +22,7 @@ $vectorB = [
 'run' => 2
 ];
 
-$similiarity = Cosine::similarity($vectorA, $vectorB);
+$similarity = Cosine::similarity($vectorA, $vectorB);
 ```
 ## Lisence
 MIT
