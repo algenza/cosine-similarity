@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Algenza\Cosinesimiliarity;
+namespace Algenza\Cosinesimilarity;
 
 
 class Cosine
 {
-	public static function similiarity(array $vec1, array $vec2)
+	public static function similarity(array $vec1, array $vec2)
 	{
 		$vectorKey = array_keys(array_merge($vec1, $vec2));
 
@@ -34,8 +34,8 @@ class Cosine
 		$magnitudeVec1 = sqrt($magnitudeVec1);
 		$magnitudeVec2 = sqrt($magnitudeVec2);
 
-		$similiarity = $dotProduct / ($magnitudeVec1 * $magnitudeVec2);
-		
-		return $similiarity;
+		$similarity = $dotProduct / ($magnitudeVec1 * $magnitudeVec2);
+
+		return $similarity;
 	}
 }

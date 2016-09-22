@@ -1,14 +1,14 @@
-# Cosine-Similiarity
+# Cosine-Similarity
 [![Build Status](https://travis-ci.org/algenza/cosine-similiarity.svg?branch=master)](https://travis-ci.org/algenza/cosine-similiarity)
 
 ## Installation
 ```sh
-composer require algenza/cosine-similiarity 
+composer require algenza/cosine-similarity 
 ```
 
 ## How to use?
 ```sh
-use Algenza\Cosinesimiliarity\Cosine;
+use Algenza\Cosinesimilarity\Cosine;
 
 $vectorA = [
 'type' => 3,
@@ -22,7 +22,7 @@ $vectorB = [
 'run' => 2
 ];
 
-$similiarity = Cosine::similiarity($vectorA, $vectorB);
+$similiarity = Cosine::similarity($vectorA, $vectorB);
 ```
 ## Lisence
 MIT

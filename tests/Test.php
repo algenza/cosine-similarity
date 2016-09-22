@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-use Algenza\Cosinesimiliarity\Cosine;
+use Algenza\Cosinesimilarity\Cosine;
 
 class Test extends PHPUnit_Framework_TestCase
 {
@@ -19,7 +19,7 @@ class Test extends PHPUnit_Framework_TestCase
 		'kamu' => 3
 		];
 
-		$sim = Cosine::similiarity($docA, $docB);
+		$sim = Cosine::similarity($docA, $docB);
 
 		$this->assertEquals(1,$sim);
 	}
@@ -38,7 +38,7 @@ class Test extends PHPUnit_Framework_TestCase
 		'mereka' => 3
 		];
 
-		$sim = Cosine::similiarity($docA, $docB);
+		$sim = Cosine::similarity($docA, $docB);
 
 		$this->assertEquals(0,$sim);
 	}
@@ -57,7 +57,7 @@ class Test extends PHPUnit_Framework_TestCase
 		'kamu' => 3
 		];
 
-		$sim = Cosine::similiarity($docA, $docB);
+		$sim = Cosine::similarity($docA, $docB);
 
 		$this->assertGreaterThan(0,$sim);
 		$this->assertLessThan(1,$sim);
@@ -69,7 +69,7 @@ class Test extends PHPUnit_Framework_TestCase
 
 		$docB = [0,1,2,3];
 
-		$sim = Cosine::similiarity($docA, $docB);
+		$sim = Cosine::similarity($docA, $docB);
 
 		$this->assertEquals(1,$sim);
 
@@ -80,7 +80,7 @@ class Test extends PHPUnit_Framework_TestCase
 
 		$docB = [0,1,0,1];
 
-		$sim = Cosine::similiarity($docA, $docB);
+		$sim = Cosine::similarity($docA, $docB);
 
 		$this->assertEquals(0,$sim);
 

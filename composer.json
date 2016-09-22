@@ -1,6 +1,6 @@
 {
-    "name": "algenza/cosine-similiarity",
-    "description": "Cosine similiarity",
+    "name": "algenza/cosine-similarity",
+    "description": "Cosine similarity",
     "type": "package",
     "require-dev": {
         "phpunit/phpunit": "^4.8"
@@ -14,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Algenza\\Cosinesimiliarity\\": "src/"
+            "Algenza\\Cosinesimilarity\\": "src/"
         }
     },
     "require": {}
