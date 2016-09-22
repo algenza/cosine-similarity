@@ -43,7 +43,7 @@ class Test extends PHPUnit_Framework_TestCase
 		$this->assertEquals(0,$sim);
 	}
 
-	public function test_()
+	public function test_between0to1()
 	{
 		$docA = [
 		'saya' => 5,
@@ -61,5 +61,28 @@ class Test extends PHPUnit_Framework_TestCase
 
 		$this->assertGreaterThan(0,$sim);
 		$this->assertLessThan(1,$sim);
+	}
+
+	public function test_wn1()
+	{
+		$docA = [0,1,2,3];
+
+		$docB = [0,1,2,3];
+
+		$sim = Cosine::similiarity($docA, $docB);
+
+		$this->assertEquals(1,$sim);
+
+	}
+	public function test_wn2()
+	{
+		$docA = [1,0,1,0];
+
+		$docB = [0,1,0,1];
+
+		$sim = Cosine::similiarity($docA, $docB);
+
+		$this->assertEquals(0,$sim);
+
 	}
 }
